@@ -8,7 +8,31 @@
 
 ## 1️⃣ 제네릭이 필요한 이유?
 
-다형성과 제네릭 비교
+타입 안정성과 재사용성을 높이기 위해 사용한다.
+
+1) 구현체를 하나씩 생성하여 활용하는 경우
+   : 타입 안정성 O, 재사용성 X
+
+   ```java
+   StringBox stringBox = new StringBox("문자");
+   IntegerBox integerBox = new IntegerBox(1);
+   ```
+
+2. 다형성을 활용하는 경우
+   : 타입 안정성 X, 재사용성 O
+
+   ```java
+   ObjectBox objectStringBox = new ObjectBox("문자");
+   ObjectBox objectIntegerBox = new ObjectBox(1);
+   ```
+
+3. 제네릭을 활용하는 경우
+   : 타입 안정성 O, 재사용성 O
+
+   ```java
+   GenericBox<String> stringGenericBox = new GenericBox<String>("문자");
+   GenericBox<Integer> integerGenericBox = new GenericBox<Integer>(1);
+   ```
 
 
 
