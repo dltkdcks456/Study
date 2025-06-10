@@ -11,5 +11,5 @@ public enum Ensemble {
         this.numberOfmusicians = numberOfmusicians;
     }
 
-    public int getNumberOfmusicians() {return ordinal()}
+//    public int getNumberOfmusicians() {return ordinal()}
 }

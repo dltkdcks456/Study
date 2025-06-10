@@ -11,10 +11,10 @@ public class SubClass extends SuperClass {
         data.add("hello");
     }
 
-    @Override
-    protected void init() {
-        System.out.println("data size: " + data.size()); // 💥 NPE 가능성
-    }
+//    @Override
+//    protected void init() {
+//        System.out.println("data size: " + data.size()); // 💥 NPE 가능성
+//    }
 
     public static void main(String[] args) throws CloneNotSupportedException {
         SubClass subClass = new SubClass();

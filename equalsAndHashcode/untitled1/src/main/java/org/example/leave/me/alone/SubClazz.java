@@ -8,9 +8,9 @@ public class SubClazz extends SuperClazz{
     public SubClazz() {
         value = "override";
     }
-AbstractList
-    @Override
-    public void sampleMethod() {
-        System.out.println(value);
-    }
+//AbstractList
+//    @Override
+//    public void sampleMethod() {
+//        System.out.println(value);
+//    }
 }

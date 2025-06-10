@@ -9,10 +9,10 @@ public final class Sub extends Super {
         instant = Instant.now();
     }
 
-    @Override
-    public void overrideMe() {
-        System.out.println(instant);
-    }
+//    @Override
+//    public void overrideMe() {
+//        System.out.println(instant);
+//    }
 
     public static void main(String[] args) {
         Sub sub = new Sub();
